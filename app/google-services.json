@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "561431409704",
+    "project_id": "infobyte-intern-assessment",
+    "storage_bucket": "infobyte-intern-assessment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561431409704:android:d8200dce221178221eb11d",
+        "android_client_info": {
+          "package_name": "com.chavvarohan.infobyteinternassessment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrjjS2QoO2ZZAnV2Uy0snFDK8-s0h5_zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

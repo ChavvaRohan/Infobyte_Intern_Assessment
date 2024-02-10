@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_data_elements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Name" />
+
+            <TextView
+                android:id="@+id/symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Symbol" />
+
+            <TextView
+                android:id="@+id/p_d_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/symbol"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="P_D_Code" />
+
+            <TextView
+                android:id="@+id/today_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_d_code"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Today_open" />
+
+            <TextView
+                android:id="@+id/today_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/today_open"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Today_high" />
+
+            <TextView
+                android:id="@+id/today_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/today_high"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Today_low" />
+
+            <TextView
+                android:id="@+id/ltp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="ltp" />
+
+            <TextView
+                android:id="@+id/today_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ltp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Today_volume" />
+
+            <TextView
+                android:id="@+id/change_in_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/today_volume"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Change_in_price" />
+
+            <TextView
+                android:id="@+id/change_in_PRICE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/change_in_price"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="change_in_PRICE" />
+
+            <TextView
+                android:id="@+id/perc_change_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/change_in_PRICE"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Perc_change_long" />
+
+            <TextView
+                android:id="@+id/perc_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/perc_change_long"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Perc_change" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/card_view_data_elements" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
